@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de teste</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 650px;
+        }
+        caption{
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+            font-weight: bold;
+            font-size: 1.5em;
+            padding-bottom: 8px;
+        }
+
+        td,th{
+            border: 1px solid black;
+            padding: 10px;
+            font-size: 1.1em;
+        }
+        #cor{
+            background-color: lightgray;
+        }
+        .cor{
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <h1><table>
+        <caption>Filmes favoritos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Mulheres</th>
+                <td>Ana Maria Snatos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Cláudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" id="cor"rowspan="3">Homens</th>
+                <td class="cor">Bruno Mendoça</td>
+                <td class="cor">Intocável</td>
+                <td class="cor">Amnésia</td>
+                <td class="cor">Gladiador</td>
+            </tr>
+            <tr>
+                <td class="cor">Daniel Lourenço</td>
+                <td class="cor">Wall-e</td>
+                <td class="cor">Oldboy</td>
+                <td class="cor">Dangal</td>
+            </tr>
+            <tr>
+                <td class="cor">Fabiano Mota</td>
+                <td class="cor">Star Wars 5</td>
+                <td class="cor">Taxi Driver</td>
+                <td class="cor">Toy Story</td>
+            </tr>
+        </tbody>
+    </table></h1>
+</body>
+</html>
