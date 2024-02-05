@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- label(rotulo) é usado para criar uma relação entre a tag e a sessão de preenchiento dos dados relativos a tag -->
+
+    <!--  metodo GAT e POST -> o metodo padrão é o GET, porém, ele so pode ser utilisados em envios de até 3 mil baits(+ou- 3 mil letras). Já o POST ele é mais ultilizados quando se pede dados mais sencíveis(número de cartão, CPF, etc) e tambem em casos de envio de imgs, porém, isso não siginifica que seus dados estão seguros somente usando o metodo POST  -->
+
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" autocomplete="off">
+        <p> <label for="inome">Nome:</label>
+            <input type="text" name="Nome" id="inome">
+        </p>
+        <p> <label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="Sobrenome" id="isobrenome">
+        </p>
+        <p>
+            <input type="submit" value="ENVIAR">
+        </p>
+    </form>
+</body>
+</html>
