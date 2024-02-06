@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Formulário</title>
+</head>
+<!-- tag de preenchimento obrigatorio -> required
+     tag de mínimo de caracteres -> minlength
+     tag de máximo de caracteres -> maxlength
+     tag de tamanho da caixa -> size
+     tag de dica de como preencher o campo-> placeholder
+     tag de preenchimento automático -> autocomplete -->
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="" method="post" autocomplete="on">
+        <p>
+            <label for="iuso">Usuário:</label>
+            <input type="text" name="usado" id="iuso" required minlength="5" maxlength="18" size="10" placeholder="Usuário" autocomplete="username">
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="9" placeholder="Senha" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
